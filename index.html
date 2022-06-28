@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Keyboard</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="change__mode">
+				<div class="night__mode"></div>
+			</div>
+			<div class="change__lang">
+				<div class="eng lang__active">EN</div>
+				<div class="ru">RU</div>
+			</div>
+			<div class="ligth__color">
+				<input class="color__change" type="color" value="">
+			</div>
+		</div>
+		<div class="content">
+			<label class="time-header">Сколько символов <br> вы печатаете в (сек) <span class="print__time">30</span></label>
+			<input type="number" class="time" value="30" min="10" step="1"></input>
+			<div class="result-header hide"> Ваш результат <span class="result"></span> символов.</div>
+		</div>
+		<div class="keyboard__wrapper">
+			<div class="keyboard__keys">
+				<div class="row">
+					<div class="key lang-key">`</div>
+					<div class="key">1</div>
+					<div class="key">2</div>
+					<div class="key">3</div>
+					<div class="key">4</div>
+					<div class="key">5</div>
+					<div class="key">6</div>
+					<div class="key">7</div>
+					<div class="key">8</div>
+					<div class="key">9</div>
+					<div class="key">0</div>
+					<div class="key">-</div>
+					<div class="key">=</div>
+					<div class="key">\</div>
+					<div class="key backspace">Backspace</div>
+				</div>
+				<div class="row">
+					<div class="key tab">Tab</div>
+					<div class="key lang-key">Q</div>
+					<div class="key lang-key">W</div>
+					<div class="key lang-key">E</div>
+					<div class="key lang-key">R</div>
+					<div class="key lang-key">T</div>
+					<div class="key lang-key">Y</div>
+					<div class="key lang-key">U</div>
+					<div class="key lang-key">I</div>
+					<div class="key lang-key">O</div>
+					<div class="key lang-key">P</div>
+					<div class="key lang-key">[</div>
+					<div class="key lang-key">]</div>
+				</div>
+				<div class="row">
+					<div class="key caps">CapsLock</div>
+					<div class="key lang-key">A</div>
+					<div class="key lang-key">S</div>
+					<div class="key lang-key">D</div>
+					<div class="key lang-key">F</div>
+					<div class="key lang-key">G</div>
+					<div class="key lang-key">H</div>
+					<div class="key lang-key">J</div>
+					<div class="key lang-key">K</div>
+					<div class="key lang-key">L</div>
+					<div class="key lang-key">;</div>
+					<div class="key lang-key">'</div>
+					<div class="key enter">Enter</div>
+				</div>
+				<div class="row">
+					<div class="shift__left shift separate__keys">Shift</div>
+					<div class="key lang-key">Z</div>
+					<div class="key lang-key">X</div>
+					<div class="key lang-key">C</div>
+					<div class="key lang-key">V</div>
+					<div class="key lang-key">B</div>
+					<div class="key lang-key">N</div>
+					<div class="key lang-key">M</div>
+					<div class="key lang-key">,</div>
+					<div class="key lang-key">.</div>
+					<div class="key lang-key">/</div>
+					<div class="shift__right shift separate__keys">Shift</div>
+				</div>
+				<div class="row">
+					<div class="key ctrl__left ctrl separate__keys">Ctrl</div>
+					<div class="key win">Win</div>
+					<div class="alt__left alt separate__keys">Alt</div>
+					<div class="key space"></div>
+					<div class="alt__right alt separate__keys">Alt</div>
+					<div class="key fn">Fn</div>
+					<div class="key ctrl__right ctrl separate__keys">Ctrl</div>
+				</div>
+			</div>
+		</div>
+		<div class="start-header">
+			<button class="start">Начать</button>
+		</div>
+		<textarea class="textarea" type="text"> </textarea>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>

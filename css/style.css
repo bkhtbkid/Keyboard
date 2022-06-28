@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular700);
+
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat';
+}
+
+.container {
+	margin: 0 auto;
+	height: 100vh;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.page-color {
+	background-color: #333;
+}
+.box {
+	position: absolute;
+	top: 30px;
+	right: 50px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.change__mode {
+	width: 40px;
+	border-radius: 6px;
+	height: 18px;
+	background-color: rgb(206, 206, 206);
+	position: relative;
+}
+.night__mode {
+	position: absolute;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	background-color: rgb(21, 21, 21);
+	transform: translate(-1px, 1px);
+	transition: all .3s;
+	cursor: pointer;
+}
+.change__lang {
+	display: flex;
+	background-color: rgb(206, 206, 206);
+	border-radius: 6px;
+	padding: 3px;
+	align-items: center;
+	height: 18px;
+}
+.eng,
+.ru {
+	height: 14px;
+	display: flex;
+	align-items: center;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: all 0.3s;
+	border-radius: 6px;
+	font-weight: 700;
+}
+.eng:hover,
+.ru:hover {
+	color: orangered;
+}
+.lang__active{
+	color: orangered;
+	padding: 5px;
+	background-color: #fff;
+}
+.color__change {
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+.keyboard__wrapper {
+	display: flex;
+	max-width: 830px;
+	width: 100%;
+	position: relative;
+	background-color: rgb(170, 170, 170);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.row {
+	display: flex;
+}
+.key,
+.alt,
+.shift {
+	flex: 1 1 auto;
+	margin: 5px;
+	padding: 5px;
+	font-weight: 700;
+	height: 40px;
+	width: 40px;
+	display: flex;
+	background-color: #fff;
+	align-items: center;
+	justify-content: center;
+	transition: all .3s;
+}
+.space {
+	width: 70%;
+}
+.backspace,
+.caps {
+	width: 100px;
+}
+.tab,
+.enter {
+	width: 80px;
+}
+.shift{
+	width: 120px;
+}
+.ctrl,
+.alt,
+.win,
+.fn {
+	width: 60px;
+}
+.textarea {
+	max-width: 830px;
+	width: 100%;
+	outline: none;
+	border: none;
+	height: 40px;
+	font-size: 20px;
+	background-color: #333;
+	color: #fff;
+	padding: 8px 10px;
+	transition: all .3s;
+	resize: none;
+	height: 100px;
+}
+.active {
+	background-color: orange !important;
+}
+.hide {
+	display: none;
+}
+.content {
+	margin-bottom: 20px;
+}
+.time-header {
+	font-size: 24px;
+	margin-bottom: 10px;
+	display: block;
+	width: 100%;
+}
+.time {
+	font-size: 24px;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #000;
+	outline: none;
+	margin-bottom: 20px;
+}
+.result-header,
+.result {
+	font-size: 24px;
+}
+.start-header {
+	margin-bottom: 20px;
+	transition: all .2s;
+}
+.start {
+	padding: 5px 10px;
+	background-color: #333;
+	outline: none;
+	color: #fff;
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
+}
+.start-header:hover {
+	transform: scale(1.1);
+}
